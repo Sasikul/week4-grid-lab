@@ -38,31 +38,6 @@
     padding: 1rem;
     color: white;
    }
-   /* สํ
-าหรับแท็บเล็ต */
-@media (max-width: 768px) {
-    .grid-container {
-    grid-template-areas:
-    "header header"
-    "nav nav"
-    "main sidebar"
-    "footer footer";
-    grid-template-columns: 1fr 200px;
-    }
-   }
-   /* สํ
-   าหรับมือถือ */
-   @media (max-width: 480px) {
-    .grid-container {
-    grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "sidebar"
-    "footer";
-    grid-template-columns: 1fr;
-    }
-   }
    /* Animations */
 @keyframes slideIn {
     from {
@@ -113,4 +88,29 @@
    .sidebar ul li:hover {
     transform: scale(1.05);
     color: #2196F3;
+   }
+    /* สํ
+าหรับแท็บเล็ต */
+@media (max-width: 768px) {
+    .grid-container {
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main sidebar"
+    "footer footer";
+    grid-template-columns: 1fr 200px;
+    }
+   }
+   /* สํ
+   าหรับมือถือ */
+   @media (max-width: 480px) {
+    .grid-container {
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "sidebar"
+    "footer";
+    grid-template-columns: 1fr;
+    }
    }
